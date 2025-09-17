@@ -1,0 +1,264 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins' ;
+}
+:root {
+    --main-color: #2E8B57;
+    /* Green (Main brand color) */
+    --accent-color: #F5F5DC;
+    /* Beige (Accent / soft sections) */
+    --dark-color: #4B2E2E;
+    /* Brown (Text / hover / strong details) */
+    --neutral-color: #FFFFF0;
+    /* Ivory (Background / clean areas) */
+}
+.fonttext {
+    font-size: larger;
+}
+.btn-color {
+    background-color: var(--dark-color);
+}
+.text-color {
+    color: var(--dark-color);
+}
+.text2-color {
+    color: var(--accent-color);
+}
+.center {
+    text-align: center;
+}
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+.gride{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr  ;
+}
+
+/* Home page start */
+
+body {
+    background: var(--neutral-color);
+}
+.header {
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.header .logo img {
+    width: 8%;
+    padding-left: 15%;
+}
+.header .navbar {
+    width: 60%;
+}
+.header a {
+    text-decoration: none;
+    padding: 0px 10px;
+}
+.header .icon {
+    padding-right: 10%;
+}
+.hometext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 70px;
+    height: 100vh;
+}
+.hometext .text {
+    padding: 40px;
+}
+.hometext .imagehome img {
+    width: 650px;
+}
+.hometext span {
+    color: var(--dark-color);
+    font-size: 40px;
+}
+.text h1 {
+    font-size: 72px;
+    letter-spacing: 4px;
+    margin: 30px 0px;
+}
+.text p {
+    width: 500px;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.3;
+}
+.text .btn1 {
+    padding: 10px 26px;
+    border: 1px solid var(--dark-color);
+    border-radius: 16px;
+    color: white;
+    font-size: 18px;
+}
+.btn1:hover {
+    background: var(--main-color);
+    border: 1px solid var(--dark-color);
+}
+/* Home page end */
+
+/* About page start */
+.firstly {
+    position: relative;
+    overflow: hidden;
+    background: var(--accent-color);
+}
+.aboutimge {
+    width: 100%;
+    background-image: url(../images/about1.png);
+    height: 50vh;
+    background-size: cover;
+}
+.banner-text {
+    background: #4b2e2e5d;
+    height: 50vh;
+}
+.banner {
+    width: 50%;
+}
+.banner hr {
+    border: 1px solid var(--accent-color);
+    margin: 10px auto;
+}
+.banner h1 {
+    padding: 10px 0px;
+    width: 90%;
+}
+.banner p {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: end;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.aboutus {
+    padding: 5% 20%;
+}
+.aboutus h1 {
+    padding-bottom: 5%;
+}
+.patner {
+    display: flex;
+    text-align: center;
+}
+.card {
+    width: 50%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.discription {
+    background: var(--accent-color);
+    padding: 5% 20%;
+}
+
+/* productpage start */
+
+.product .product-imge{
+    background-image: url(../images/product.png);
+    background-size: cover;
+    height: 50vh;
+}
+.pro-firsly{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: var(--accent-color);
+}
+.product-menu{
+    height: 50vh;
+    padding: 60px 0px;
+}
+.icon img{
+    width: 15%;
+    padding:30px 25px;
+}
+.parts{
+    /* background: #2E8B57; */
+    border: #4B2E2E 1px solid;
+    padding: 50px 200px;
+    margin-bottom: 10px;
+}
+.photos{
+    display:flex;
+}
+.parts .texts hr{
+    margin: 20px auto;
+}
+.parts .photos img{
+    width: 350px;
+    padding: 20px 20px 0px 0px;
+}
+.see-more{
+    margin-top: 40px;
+}
+.btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer start */
+
+.footer {
+    height: 5px;
+    text-align: center;
+    background: var(--neutral-color);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.part{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.part img {
+    width: 40%;
+}
+.contact {
+    display: flex;
+    padding: 20px;
+}
+.footer p {
+    margin: 0px 20px;
+}
+.allpages a {
+    text-decoration: none;
+    padding: 15px 0px;
+}
+.media img {
+    width: 10%;
+    padding: 20px 20px;
+}
