@@ -14,16 +14,25 @@
 </head>
 
 <body>
-    <nav>
+        <nav class="sticky">
         <section class="header">
-            <div class="logo">
-                <img src="../images/Logo.png" alt="">
-            </div>
-            <div class="navbar">
-                <a href="../index.html">HOME</a>
-                <a href="aboutPage.html">ABOUT</a>
-                <a href="productPage.html">PRODUCT</a>
-                <a href="contactPage.html">CONTACT</a>
+            <div class="forphone display">
+                <div class="logo">
+                    <img src="../images/Logo.png" alt="">
+                </div>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="navbar">
+                    <a href="../index.html">HOME</a>
+                    <a href="aboutPage.html">ABOUT</a>
+                    <a href="productPage.html">PRODUCT</a>
+                    <a href="contactPage.html">CONTACT</a>
+                </div>
             </div>
             <div class="icon">
                 <span class="material-symbols-outlined gad">search</span>
@@ -32,6 +41,16 @@
             </div>
         </section>
     </nav>
+
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.querySelector('.navbar');
+
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
     <main>
         <div class="container">
             <h1>Handmade Wood Carvings</h1>
@@ -105,6 +124,44 @@
             </div>
         </div>
     </main>
+      <footer class="footer">
+        <div class="footer-container justify">
+            <div class="footer-section footer-center">
+                <h2 class="logo"><img src="../images/Logo.png" alt=""></h2>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>KSHOP is your trusted place to discover authentic Khmer handmade products.
+                    We aim to support local artisans and bring unique, high-quality items to our customers.</p>
+            </div>
+            <div class="footer-section padding">
+                <h3>Quick Links</h3>
+                <div class="links">
+                    <a href="../index.html">HOME</a>
+                    <a href="aboutPage.html">ABOUT</a>
+                    <a href="productPage.html">PRODUCT</a>
+                    <a href="contactPage.html">CONTACT</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p class="small"><i class="fas fa-map-marker-alt"></i>Phnom Penh, Cambodia</p>
+                <p class="small"><i class="fas fa-phone"></i> 060760558 / 0717339800</p>
+                <p class="small"><i class="fas fa-envelope"></i> khmerhandmade@shop.com</p>
+                <p ><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+    </footer>
+    <div class="footer-bottom center">
+        <p>© 2025 KSHOP. All rights reserved. | Designed with ❤️ in Cambodia</p>
+    </div>
 </body>
 
 </html>

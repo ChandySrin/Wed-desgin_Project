@@ -13,16 +13,25 @@
 </head>
 
 <body>
-    <nav class="sticky">
+        <nav class="sticky">
         <section class="header">
-            <div class="logo">
-                <img src="../images/Logo.png" alt="">
-            </div>
-            <div class="navbar">
-                <a href="../index.html">HOME</a>
-                <a href="aboutPage.html">ABOUT</a>
-                <a href="productPage.html">PRODUCT</a>
-                <a href="contactPage.html">CONTACT</a>
+            <div class="forphone display">
+                <div class="logo">
+                    <img src="../images/Logo.png" alt="">
+                </div>
+
+                <div class="menu-toggle" id="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="navbar">
+                    <a href="../index.html">HOME</a>
+                    <a href="aboutPage.html">ABOUT</a>
+                    <a href="productPage.html">PRODUCT</a>
+                    <a href="contactPage.html">CONTACT</a>
+                </div>
             </div>
             <div class="icon">
                 <span class="material-symbols-outlined gad">search</span>
@@ -31,6 +40,16 @@
             </div>
         </section>
     </nav>
+
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbar = document.querySelector('.navbar');
+
+        mobileMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
 
     <main>
         <section class="about">
@@ -60,15 +79,15 @@
                 <div class="partner justify">
                     <div class="card">
                         <img src="../images/patner1.png" alt="">
-                        <p>fghjdfghj</p>
+                        <p class="text-header">Angkor HandCraft</p>
                     </div>
                     <div class="card">
                         <img src="../images/patner2.png" alt="">
-                        <p>sdfghj</p>
+                        <p class="text-header">NAGA HANDMADE</p>
                     </div>
                     <div class="card">
                         <img src="../images/patnter3.png" alt="">
-                        <p>dfghjkl</p>
+                        <p class="text-header">Fair Trade</p>
                     </div>
                 </div>
             </div>
@@ -84,8 +103,6 @@
 
     <footer class="footer">
         <div class="footer-container justify">
-
-            <!-- Logo + Social -->
             <div class="footer-section footer-center">
                 <h2 class="logo"><img src="../images/Logo.png" alt=""></h2>
                 <div class="social-icons">
@@ -102,8 +119,6 @@
                 <p>KSHOP is your trusted place to discover authentic Khmer handmade products.
                     We aim to support local artisans and bring unique, high-quality items to our customers.</p>
             </div>
-
-            <!-- Quick Links -->
             <div class="footer-section padding">
                 <h3>Quick Links</h3>
                 <div class="links">
@@ -113,10 +128,6 @@
                     <a href="contactPage.html">CONTACT</a>
                 </div>
             </div>
-
-
-
-            <!-- Contact -->
             <div class="footer-section">
                 <h3>Contact Us</h3>
                 <p class="small"><i class="fas fa-map-marker-alt"></i>Phnom Penh, Cambodia</p>
